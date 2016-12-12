@@ -1,14 +1,8 @@
 package SwingParserNBP;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
 
 
@@ -28,8 +22,7 @@ public class Zadanie5 {
                 window.add(mainPanel);
                     
                 Parser parser = new Parser(window);
-                parser.parse();
-                
+                parser.execute();
 
             }
         });

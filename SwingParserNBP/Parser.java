@@ -20,7 +20,6 @@ public class Parser extends SwingWorker<Void, Void> {
     
     public void parse() {
         String url = "http://www.nbp.pl/kursy/xml/a238z161209.xml";
-        System.out.println("elo");
         try {
 
             DocumentBuilderFactory f = DocumentBuilderFactory.newInstance();
@@ -60,6 +59,7 @@ public class Parser extends SwingWorker<Void, Void> {
 
     @Override
     protected Void doInBackground() {
+        parse();
         return null;
     }
 }
